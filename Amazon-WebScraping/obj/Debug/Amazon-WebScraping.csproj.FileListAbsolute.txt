@@ -9,3 +9,14 @@ C:\Users\Acer\source\repos\Amazon-WebScraping\Amazon-WebScraping\bin\Debug\HtmlA
 C:\Users\Acer\source\repos\Amazon-WebScraping\Amazon-WebScraping\obj\Debug\Amazon-WebScraping.csproj.CopyComplete
 C:\Users\Acer\source\repos\Amazon-WebScraping\Amazon-WebScraping\obj\Debug\Amazon-WebScraping.exe
 C:\Users\Acer\source\repos\Amazon-WebScraping\Amazon-WebScraping\obj\Debug\Amazon-WebScraping.pdb
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\Amazon-WebScraping\bin\Debug\Amazon-WebScraping.exe.config
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\Amazon-WebScraping\bin\Debug\Amazon-WebScraping.exe
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\Amazon-WebScraping\bin\Debug\Amazon-WebScraping.pdb
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\Amazon-WebScraping\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\Amazon-WebScraping\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\Amazon-WebScraping\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\Amazon-WebScraping\obj\Debug\Amazon-WebScraping.csprojAssemblyReference.cache
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\Amazon-WebScraping\obj\Debug\Amazon-WebScraping.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\Amazon-WebScraping\obj\Debug\Amazon-WebScraping.csproj.CopyComplete
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\Amazon-WebScraping\obj\Debug\Amazon-WebScraping.exe
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\Amazon-WebScraping\obj\Debug\Amazon-WebScraping.pdb

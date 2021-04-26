@@ -25,31 +25,26 @@ namespace Amazon_WebScraping
             var htmlDocument = new HtmlDocument();
             htmlDocument.LoadHtml(html);
 
-            var productsHtml = htmlDocument.DocumentNode.Descendants("div")
-            .Where(node => node.GetAttributeValue("id", " ")
-            .Equals("centerCol")).ToList();
 
-            var productListItems = productsHtml[0].Descendants("div")
-                .Where(node => node.GetAttributeValue("class", " ")
-                .Equals("celwidget")).ToList();
 
-            foreach (var productListItem in productListItems)
-            {
-                // id
-                Console.WriteLine(productListItem.GetAttributeValue("id", ""));
+            string productName = htmlDocument.DocumentNode.SelectSingleNode("//*[@id=\"productTitle\"]").InnerText.Trim('\n');
+            Console.WriteLine("PRODUCT NAME: " +  productName + "\n");
 
-                // product name
-                Console.WriteLine("Product Name: ", productListItem.Descendants("span")
-                    .Where(node => node.GetAttributeValue("id", "")
-                    .Equals("productTitle")).FirstOrDefault().InnerText
-                    );
+            string productStar = htmlDocument.DocumentNode.SelectSingleNode("//*[@id=\"acrPopover\"]").InnerText.Trim('\n');
+            Console.WriteLine("PRODUCT STAR RATE: " + productStar + "\n");
 
-                // product price
-                //Console.WriteLine(productListItem.Descendants("span")
-                //    .Where(node => node.GetAttributeValue("id", "")
-                //    .Equals("priceblock_saleprice")).FirstOrDefault().InnerText
-                //    );
-            }
+            string productPrice = htmlDocument.DocumentNode.SelectSingleNode("//*[@id=\"priceblock_saleprice\"]").InnerText.Trim('\n');
+            Console.WriteLine("PRODUCT PRICE: " + productPrice + "\n");
+
+            string productLink = htmlDocument.DocumentNode.SelectSingleNode("//*[@class=\"a-link-normal\"]").InnerText.Trim('\n');
+            Console.WriteLine("BLUE PRODUCT PRICE: " + productLink + "\n");
+
+            string productColorBlack = htmlDocument.DocumentNode.SelectSingleNode("//*[@id=\"color_name_0\"]").InnerText.Trim('\n');
+            Console.WriteLine("BLACK PRODUCT PRICE: " + productColorBlack + "\n");
+
+            string productColorBlue = htmlDocument.DocumentNode.SelectSingleNode("//*[@id=\"color_name_1\"]").InnerText.Trim('\n');
+            Console.WriteLine("BLUE PRODUCT PRICE: " + productColorBlue + "\n");
+
 
             Console.WriteLine();
         }
