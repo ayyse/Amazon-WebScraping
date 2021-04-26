@@ -36,9 +36,6 @@ namespace Amazon_WebScraping
             string productPrice = htmlDocument.DocumentNode.SelectSingleNode("//*[@id=\"priceblock_saleprice\"]").InnerText.Trim('\n');
             Console.WriteLine("PRODUCT PRICE: " + productPrice + "\n");
 
-            string productLink = htmlDocument.DocumentNode.SelectSingleNode("//*[@class=\"a-link-normal\"]").InnerText.Trim('\n');
-            Console.WriteLine("BLUE PRODUCT PRICE: " + productLink + "\n");
-
             string productColorBlack = htmlDocument.DocumentNode.SelectSingleNode("//*[@id=\"color_name_0\"]").InnerText.Trim('\n');
             Console.WriteLine("BLACK PRODUCT PRICE: " + productColorBlack + "\n");
 
