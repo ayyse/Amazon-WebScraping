@@ -9,3 +9,14 @@ C:\Users\Acer\source\repos\BrandScraping\BrandScraping\obj\Debug\BrandScraping.c
 C:\Users\Acer\source\repos\BrandScraping\BrandScraping\obj\Debug\BrandScraping.csproj.CopyComplete
 C:\Users\Acer\source\repos\BrandScraping\BrandScraping\obj\Debug\BrandScraping.exe
 C:\Users\Acer\source\repos\BrandScraping\BrandScraping\obj\Debug\BrandScraping.pdb
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\ProductBrand-WebScraping\BrandScraping\bin\Debug\BrandScraping.exe.config
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\ProductBrand-WebScraping\BrandScraping\bin\Debug\BrandScraping.exe
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\ProductBrand-WebScraping\BrandScraping\bin\Debug\BrandScraping.pdb
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\ProductBrand-WebScraping\BrandScraping\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\ProductBrand-WebScraping\BrandScraping\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\ProductBrand-WebScraping\BrandScraping\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\ProductBrand-WebScraping\BrandScraping\obj\Debug\BrandScraping.csprojAssemblyReference.cache
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\ProductBrand-WebScraping\BrandScraping\obj\Debug\BrandScraping.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\ProductBrand-WebScraping\BrandScraping\obj\Debug\BrandScraping.csproj.CopyComplete
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\ProductBrand-WebScraping\BrandScraping\obj\Debug\BrandScraping.exe
+C:\Users\Acer\Documents\GitHub\Amazon-WebScraping\ProductBrand-WebScraping\BrandScraping\obj\Debug\BrandScraping.pdb
