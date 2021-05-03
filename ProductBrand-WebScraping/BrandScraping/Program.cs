@@ -26,51 +26,53 @@ namespace BrandScraping
             var country = htmlDocument.DocumentNode.SelectSingleNode("//a[@id=\"nav-logo-sprites\"]").InnerText.Trim('\n');
             Console.WriteLine("PRODUCT COUNTRY: " + country + "\n");
 
-
-            try
+            var sellingBrand = htmlDocument.DocumentNode.SelectSingleNode("//span[@id=\"tabular-buybox-truncate-1\"]");
+            if (sellingBrand != null)
             {
-                // second 
-                var selling = htmlDocument.DocumentNode.SelectSingleNode("//span[@id=\"tabular-buybox-truncate-1\"]").InnerText.Trim('\n');
+                var selling = sellingBrand.InnerText.Trim('\n');
                 Console.WriteLine("PRODUCT BRAND: " + selling + "\n");
                 Console.WriteLine("Selling by " + selling);
-                var shipping = htmlDocument.DocumentNode.SelectSingleNode("//span[@id=\"tabular-buybox-truncate-0\"]").InnerText.Trim('\n');
+            }
+            else
+            {
+                var productBrand = htmlDocument.DocumentNode.SelectSingleNode("//a[@id=\"sellerProfileTriggerId\"]");
+                if (productBrand != null)
+                {
+                    var brand = productBrand.InnerText.Trim('\n');
+                    Console.WriteLine("PRODUCT BRAND: " + brand + "\n");
+                    Console.WriteLine("Selling by  " + brand);
+                }
+                else
+                    Console.WriteLine("Selling by Amazon");
+            }
+
+
+            var shippingBrand = htmlDocument.DocumentNode.SelectSingleNode("//span[@id=\"tabular-buybox-truncate-0\"]");
+            if (shippingBrand != null)
+            {
+                var shipping = shippingBrand.InnerText.Trim('\n');
                 Console.WriteLine("Shipping by " + shipping);
             }
-            catch (Exception)
+            else
             {
-                try
+                var shippingBrand2 = htmlDocument.DocumentNode.SelectSingleNode("//a[@id=\"SSOFpopoverLink\"]");
+                if (shippingBrand2 != null)
                 {
-                    var productBrand = htmlDocument.DocumentNode.SelectSingleNode("//a[@id=\"sellerProfileTriggerId\"]").InnerText.Trim('\n');
-                    Console.WriteLine("PRODUCT BRAND: " + productBrand + "\n");
-                    Console.WriteLine("Selling by  " + productBrand);
+                    var shipping = shippingBrand2.InnerText.Trim('\n');
+                    Console.WriteLine("Shipping by Amazon");
                 }
-                catch (Exception)
+                else
                 {
-                    Console.WriteLine("Selling by Amazon");
-                }
-
-                try
-                {
-                    var shipping = htmlDocument.DocumentNode.SelectSingleNode("//a[@id=\"SSOFpopoverLink\"]").InnerText.Trim('\n');
-                    if (shipping != null)
-                    {
+                    var productBrand = htmlDocument.DocumentNode.SelectSingleNode("//a[@id=\"sellerProfileTriggerId\"]");
+                    if (productBrand != null)
+                   s {
+                        var brand = productBrand.InnerText.Trim('\n');
+                        Console.WriteLine("Shipping by " + brand);
+                    }
+                    else
                         Console.WriteLine("Shipping by Amazon");
-                    }
-                }
-                catch (Exception)
-                {
-                    try
-                    {
-                        var productBrand = htmlDocument.DocumentNode.SelectSingleNode("//a[@id=\"sellerProfileTriggerId\"]").InnerText.Trim('\n');
-                        Console.WriteLine("Shipping by " + productBrand);
-                    }
-                    catch (Exception)
-                    {
-                        Console.WriteLine("Shipping by Amazon");
-                    }
                 }
             }
-
         }
     }
 }
